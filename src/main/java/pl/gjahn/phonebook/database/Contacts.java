@@ -12,7 +12,7 @@ public class Contacts {
     static List<ContactForm> contacts = new ArrayList<>();
 
 
-    public static boolean nameCheck(ContactForm contactForm) {
+    public  static boolean nameCheck(ContactForm contactForm) {
         for (ContactForm contact : contacts) {
             if (contact.getName().equals(contactForm.getName())) {
                 return true;
@@ -21,12 +21,11 @@ public class Contacts {
         return false;
     }
 
-    public static boolean contactAdd(ContactForm contactForm) {
+    public static void contactAdd(ContactForm contactForm) {
         contacts.add(contactForm);
-        return true;
     }
 
-    public static List<ContactForm> printContacts() {
+    public  static List<ContactForm> printContacts() {
         return contacts;
     }
 }
