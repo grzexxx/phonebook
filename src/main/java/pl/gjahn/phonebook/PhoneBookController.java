@@ -37,7 +37,7 @@ public class PhoneBookController {
         if (Contacts.nameCheck(contactForm)) {
             return "blind_way";
         } else {
-            System.out.println(Contacts.contactAdd(contactForm));
+            Contacts.contactAdd(contactForm);
             model.addAttribute("contactForm", contactForm);
 
             return "hello";

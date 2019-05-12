@@ -7,20 +7,19 @@
 
 <center><h1 style="color: aqua"> Your contacts: </h1></center>
 
-<span th:each="contact : ${print_form}"
-      th:text="${ contact.getName() + contact.getSurname() + contact.getPhoneNum()}">
+<div th:each="contact : ${print_form}">
+    <span th:text="${ contact.getName() + contact.getSurname() + contact.getPhoneNum()}"></span>
+    <br/>
+</div>
 <br/>
-</span>
-<br/>
-<span th:each="contact : ${print_form}"
-      th:text="${ contact.toString()}">
-<br/>
-</span>
+<div th:each="contact : ${print_form}">
+    <span th:text="${ contact.toString()}"></span>
 
+    <br/>
+</div>
 
 <br/>
 <button><a href="/"> Back to first page </a></button>
-
 
 </body>
 </html>

@@ -14,7 +14,7 @@ public class Contacts {
 
     public static boolean nameCheck(ContactForm contactForm) {
         for (ContactForm contact : contacts) {
-            if (contact.getName().equals(contactForm.getName())){
+            if (contact.getName().equals(contactForm.getName())) {
                 return true;
             }
         }
@@ -26,7 +26,7 @@ public class Contacts {
         return true;
     }
 
-    public static List<ContactForm> printContacts (){
+    public static List<ContactForm> printContacts() {
         return contacts;
-}
+    }
 }
