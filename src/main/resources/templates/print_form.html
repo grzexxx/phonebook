@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<center><h1 style="color: aqua"> Your contacts: </h1></center>
+
+<span th:each="contact : ${print_form}"
+      th:text="${ contact.getName() + contact.getSurname() + contact.getPhoneNum()}">
+<br/>
+</span>
+<br/>
+<span th:each="contact : ${print_form}"
+      th:text="${ contact.toString()}">
+<br/>
+</span>
+
+
+<br/>
+<button><a href="/"> Back to first page </a></button>
+
+
+</body>
+</html>
